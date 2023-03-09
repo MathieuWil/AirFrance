@@ -5,12 +5,17 @@ Enoncé donné par le professeur
 
 
 * Air France gestion des vols 
-	les tables : pilote, avion, aeroport, vol, user 
-	la table vol a deux clés étrangères : avion, pilote 
-	la table avion contient une clé étrangère de aeroport 
-	- Programmer les opérations CRUD : création (ajout), Read (lecture), Update, Delete et recherche sur les tables avec des droits.
-	User  : voir tout 
-	Pilote : voit que ses vols et les avions et les aeroports.
+
+les tables : pilote, avion, aeroport, vol, user 
+
+la table vol a deux clés étrangères : avion, pilote 
+
+la table avion contient une clé étrangère de aeroport 
+
+- Programmer les opérations CRUD : création (ajout), Read (lecture), Update, Delete et recherche sur les tables avec des droits.
+
+User  : voir tout 
+Pilote : voit que ses vols et les avions et les aeroports.
   
   
   
