@@ -1,5 +1,5 @@
-<br/> <br> </br>
-<h1> Gestion des Vols </h1>
+<div>
+<h2 class="page-title"> Vols </h2>
 <?php
 	if (isset($_SESSION['role']) && $_SESSION['role']=="admin") {
 
@@ -53,3 +53,4 @@
 	//afficher les Vols
 	require_once ("vue/lister_vol.php"); 
 ?>
+</div>

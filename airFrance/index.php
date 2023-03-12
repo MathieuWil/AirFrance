@@ -6,14 +6,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
 	<title>Gestion des vols - Air France</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Force php to reload after the css -->
+	<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>" />
 </head>
 <body>
 	<center>
-		<h1>Gestion des vols - Air France</h1>
-		<br>
-
 		<?php
 			if ( ! isset($_SESSION['email'])) {
 				require_once("vue/form_connexion.php");
@@ -48,25 +47,32 @@
 
 			if (isset($_SESSION['email'])) {
 				echo '
-					<button>
-						<a href="index.php?page=0" id="boutton"><img src ="images/logo.png" width="30" height="30"> Accueil </a>
-					</button>
+				<header>
 
-          <button>
-          	<a href="index.php?page=1" id="boutton"><img src ="images/avion.png" width="30" height="30"> Avions </a>
-          </button>
+				<button class="header_btn header_logo">
+					<img src="images/airfrance" height="70px" />
+				</button>
 
-          <button>
-          	<a href="index.php?page=2" id="boutton"><img src ="images/aeroport.png" width="30" height="30"> Aeroport </a>
-          </button>
+				<button class="header_btn">
+					<a href="index.php?page=0" id="boutton"><img src ="images/logo.png" width="50" height="50"> Accueil </a>
+				</button>
 
-          <button>
-          	<a href="index.php?page=3" id="boutton"><img src ="images/vol.png" width="30" height="30"> Vol </a>
-          </button>
-					
-					<button>
-						<a href="index.php?page=4" id="boutton"><img src ="images/deconnexion.png" width="30" height="30"> Se déconnecter </a>
-					</button>
+				<button class="header_btn">
+					<a href="index.php?page=1" id="boutton"><img src ="images/avion.png" width="50" height="50"> Avions </a>
+				</button>
+
+				<button class="header_btn">
+					<a href="index.php?page=2" id="boutton"><img src ="images/aeroport.png" width="50" height="50"> Aeroport </a>
+				</button>
+
+				<button class="header_btn">
+					<a href="index.php?page=3" id="boutton"><img src ="images/vol.png" width="50" height="50"> Vol </a>
+				</button>
+						
+				<button class="header_btn">
+					<a href="index.php?page=4" id="boutton"><img src ="images/deconnexion.png" width="50" height="50"> Se déconnecter </a>
+				</button>
+				</header>
 				';
 				
 			
@@ -77,10 +83,10 @@
 				}
 				switch($page){
 					case 0 : require_once("home.php"); break;
-          case 1 : require_once("gestion_avion.php"); break;
-          case 2 : require_once("gestion_aeroport.php"); break;
+					case 1 : require_once("gestion_avion.php"); break;
+					case 2 : require_once("gestion_aeroport.php"); break;
 					case 3 : require_once("gestion_vol.php"); break;
-          case 4 :
+					case 4 :
 						// Retirer email de la session
 						unset($_SESSION['email']);
 

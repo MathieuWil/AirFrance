@@ -1,5 +1,5 @@
-<br/> <br> </br>
-<h1> Gestion des aeroports </h1>
+<div>
+<h2 class="page-title"> Aéroports </h2>
 <?php
 	if (isset($_SESSION['role']) && $_SESSION['role']=="admin") {
 
@@ -44,3 +44,4 @@
 	//afficher les Aeroport 
 	require_once ("vue/lister_aeroport.php"); 
 ?>
+</div>

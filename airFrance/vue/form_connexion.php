@@ -1,6 +1,12 @@
-<h1> Connexion au site de livraisons </h1>
+<div id="connexion_header">
+	<img src="images/airfrance" height="70px" />
+</div>
+<h2 class="page-title"> Connexion </h2>
 <br/>
 <form method="post">
+
+	<h3> Vous êtes : </h3>
+
 	<table>
 
 		<tr>

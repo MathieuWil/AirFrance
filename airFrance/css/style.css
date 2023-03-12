@@ -1,4 +1,87 @@
-#boutton {
+html, body {
+	width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
 	text-decoration: none;
 	color: black;
+}
+
+
+/**************************/
+/*	  CONNEXION HEADER	  */
+/**************************/
+
+#connexion_header {
+	display: flex;
+	padding: 10px;
+	border: 3px solid #000;
+}
+
+
+/**************************/
+/*		SHARED HEADER	  */
+/**************************/
+
+header {
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	padding: 10px;
+	border: 3px solid #000;
+}
+
+.header_btn {
+	background-color: #fff;
+	margin: 0 20px;
+	font-size: 1.5rem;
+}
+
+.header_btn:nth-child(2) {
+	margin-right: auto;
+}
+
+.header_btn:nth-child(6) {
+	margin-left: auto;
+}
+
+.header_logo {
+	border: none;
+}
+
+.header_btn a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/**************************/
+/*		Shared Styles	  */
+/**************************/
+
+.page-title {
+	width: 100%;
+	font-size: 3em;
+	padding: .2em;
+	margin: 0;
+	background-color: #158edf;
+
+	border: 3px solid #000;
+	border-top: none;
+}
+
+
+/**************************/
+/*		  HOMEPAGE		  */
+/**************************/
+
+#home {
+	background-image: url("images/a.jpg");
 }

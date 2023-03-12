@@ -1,5 +1,5 @@
-<br/> <br> </br>
-<h1> Gestion des Avions </h1>
+<div>
+<h2 class="page-title"> Avions </h2>
 <?php
 	if (isset($_SESSION['role']) && $_SESSION['role']=="admin") {
 
@@ -45,3 +45,4 @@
 	//afficher les Avions
 	require_once ("vue/lister_avion.php"); 
 ?>
+</div>
