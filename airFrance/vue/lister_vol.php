@@ -30,8 +30,10 @@
 			echo "<td>".$Vol['idvol']."</td>";
 			echo "<td>".$Vol['depart']."</td>";
 			echo "<td>".$Vol['arrive']."</td>";
-			echo "<td>".$Vol['idavion']."</td>";
-			echo "<td>".$Vol['idpilote']."</td>";
+			$AvionSelect = selectWhereAvion($Vol['idavion']);
+			echo "<td>".$AvionSelect['modele']."</td>";
+			$PiloteSelect = selectWhereUserID($Vol['idpilote']);
+			echo "<td>".$PiloteSelect['prenom']."</td>";
 			
 			if (isset($_SESSION["role"]) && $_SESSION["role"]=="admin") {
 				echo "<td>

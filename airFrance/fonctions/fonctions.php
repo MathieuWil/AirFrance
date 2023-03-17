@@ -41,6 +41,23 @@
 		return $unUser; 
 	}
 
+    function selectWhereUserID($iduser)
+	{
+		// Ecriture de la requete 
+		$requete = "select * from user where iduser =".$iduser.";";
+
+		// Connexion 
+		$con = connexion ();
+
+		$leResultat = mysqli_query($con, $requete);
+		$unUser = mysqli_fetch_assoc($leResultat); //tableau associatif
+
+		// Déconnexion 
+		deconnexion($con);
+
+		return $unUser; 
+	}
+
 
 
 
@@ -161,7 +178,7 @@
 
 
     /****************************************************/
-	/**************** Fonctions aeroport ****************/
+	/****************  Fonctions avion 	*****************/
 	/****************************************************/
 
 
