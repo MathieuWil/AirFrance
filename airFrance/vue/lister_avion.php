@@ -27,7 +27,8 @@
 			echo "<tr>"; 
 			echo "<td>".$Avion['idavion']."</td>";
 			echo "<td>".$Avion['modele']."</td>";
-			echo "<td>".$Avion['idaeroport']."</td>";
+			$AeroportSelect = selectWhereAeroport($Avion['idaeroport']);
+			echo "<td>".$AeroportSelect['nomaeroport']."</td>";
 			
 			if (isset($_SESSION["role"]) && $_SESSION["role"]=="admin") {
 				echo "<td>

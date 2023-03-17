@@ -2,6 +2,7 @@ html, body {
 	width: 100vw;
 	min-height: 100vh;
 	margin: 0;
+	height: 100%;
 }
 
 * {
@@ -11,6 +12,10 @@ html, body {
 a {
 	text-decoration: none;
 	color: black;
+}
+
+body > center {
+	height: 100%;
 }
 
 
@@ -83,5 +88,6 @@ header {
 /**************************/
 
 #home {
-	background-image: url("images/a.jpg");
+	background-image: url("http://localhost/AirFrance-master/airFrance/images/a.jpg");
+	object-fit: contain;
 }

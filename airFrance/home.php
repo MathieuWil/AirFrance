@@ -1,17 +1,17 @@
 <div id="home">
 	<h2 class="page-title"> Accueil </h2>
 
-	<br/>
+	
 
 	<p>
 		Utilisateur connecté
-		<br />
+		
 		<?php
 			echo $_SESSION['nom'];
 			echo " ";
 			echo $_SESSION['prenom'];
 		?>
-		<br /><br /><br /><br />
+		
 	</p>
 
 		<button class="header_btn">
@@ -27,11 +27,11 @@
 		</button>
 
 	<p>
-		Ce site a été réalisé par Mathieu, Elian, Ilyes et Baptiste du CFA Insta <br/><br/>
-		Site créé le 28/02/2023. <br/><br/>
+		Ce site a été réalisé par Mathieu, Elian, Ilyes et Baptiste du CFA Insta
+		Site créé le 28/02/2023.
 
-		Pas de droits réservés <br/><br/>
+		Pas de droits réservés
 
-		Bonne visite <br/>
+		Bonne visite
 	</p>
 </div>
