@@ -1,11 +1,9 @@
 <div id="home">
 	<h2 class="page-title"> Accueil </h2>
 
-	
-
 	<p>
 		Utilisateur connecté
-		
+		<br />
 		<?php
 			echo $_SESSION['nom'];
 			echo " ";
@@ -27,10 +25,11 @@
 		</button>
 
 	<p>
-		Ce site a été réalisé par Mathieu, Elian, Ilyes et Baptiste du CFA Insta
-		Site créé le 28/02/2023.
+		Ce site a été réalisé par Mathieu, Elian, Ilyes et Baptiste du CFA Insta <br />
+		Site créé le 28/02/2023. <br /><br /><br />
 
-		Pas de droits réservés
+
+		Pas de droits réservés <br /><br />
 
 		Bonne visite
 	</p>

@@ -1,5 +1,5 @@
 html, body {
-	width: 100vw;
+	max-width: 100vw;
 	min-height: 100vh;
 	margin: 0;
 	height: 100%;
@@ -86,8 +86,16 @@ header {
 /**************************/
 /*		  HOMEPAGE		  */
 /**************************/
-
+/*	Si la photo ne s'affiche pas, changer le chemin par celui du projet Wamp.
+	Il suffit de remplacer 'localhost' par 'www' dans votre explorateur de fichiers	
+*/
 #home {
-	background-image: url("http://localhost/AirFrance-master/airFrance/images/a.jpg");
+	height: 100%;
+	background-image: url("http://localhost/airFrance/images/a.jpg");
 	object-fit: contain;
+	background-size: cover;
+}
+
+#home p {
+	font-size: 1.2em;
 }
