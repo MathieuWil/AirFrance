@@ -33,7 +33,7 @@
 			$AvionSelect = selectWhereAvion($Vol['idavion']);
 			echo "<td>".$AvionSelect['modele']."</td>";
 			$PiloteSelect = selectWhereUserID($Vol['idpilote']);
-			echo "<td>".$PiloteSelect['prenom']."</td>";
+			echo "<td>".$PiloteSelect['nom']." ".$PiloteSelect['prenom']."</td>";
 			
 			if (isset($_SESSION["role"]) && $_SESSION["role"]=="admin") {
 				echo "<td>
