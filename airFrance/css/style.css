@@ -39,7 +39,7 @@ header {
 	align-items: center;
 	font-size: 1.5rem;
 	padding: 10px;
-	border: 3px solid #000;
+	border: 3px solid #171717;
 }
 
 .header_btn {
@@ -76,9 +76,10 @@ header {
 	font-size: 3em;
 	padding: .2em;
 	margin: 0;
+	color : #fff;
 	background-color: #158edf;
 
-	border: 3px solid #000;
+	border: 3px solid #171717;
 	border-top: none;
 }
 
@@ -91,11 +92,41 @@ header {
 */
 #home {
 	height: 100%;
-	background-image: url("http://localhost/airFrance/images/a.jpg");
-	object-fit: contain;
+	background-image: url("http://localhost/airFrance/images/fond_acceuil.jpg");
 	background-size: cover;
 }
 
 #home p {
 	font-size: 1.2em;
 }
+
+#home h1{
+	color : #fff;
+	font-size: 2em;
+}
+
+
+
+/******************/
+/* PAGE CONNEXION */
+/******************/
+#connexion {
+	height: 100%;
+	background-image: url("http://localhost/airFrance/images/fond_connexion.jpg");
+	background-size: cover;
+}
+
+#h3 {
+	color : #171717;
+	font-size: 2em;
+}
+
+/**************/
+/* PAGE AVION */
+/**************/
+#avion {
+	height: 100%;
+	background-image: url("http://localhost/airFrance/images/fond_avion.jpg");
+	background-size: cover;
+}
+

@@ -1,4 +1,4 @@
-<div>
+<div id="avion">
 <h2 class="page-title"> Avions </h2>
 <?php
 	if (isset($_SESSION['role']) && $_SESSION['role']=="admin") {

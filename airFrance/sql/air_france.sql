@@ -20,7 +20,7 @@ insert into user values
 insert into user values
 	(null, "Pilote", "Moimeme", "moimeme@gmail.com", "123", "pilote");
 insert into user values
-  (null, "Admin", "Rigail", "admin@gmail.com", "456", "admin");
+    (null, "Admin", "Rigail", "admin@gmail.com", "456", "admin");
 
 /***************************** AEROPORTS ******************************/
 
@@ -35,11 +35,11 @@ create table aeroport (
 /******************************* AVIONS ********************************/
 
 create table avion (
-	idavion int(3) not  null auto_increment,
+    idavion int(3) not  null auto_increment,
 	modele varchar(50),
-  idaeroport int(3) not null,
+    idaeroport int(3) not null,
 	primary key (idavion),
-  foreign key (idaeroport) references aeroport (idaeroport)
+    foreign key (idaeroport) references aeroport (idaeroport)
 );
 
 /******************************* VOLS *********************************/
@@ -48,9 +48,8 @@ create table vol (
 	idvol int(3) not  null auto_increment,
 	depart varchar(50),
 	arrive varchar(50),
-  idavion int(3) not null,
-  idpilote int(3) not null,
+    idavion int(3) not null,
+    idpilote int(3) not null,
 	primary key (idvol),
-  foreign key (idavion) references avion (idavion),
-	foreign key (idpilote) references pilote (idpilote)
+    foreign key (idavion) references avion (idavion)
 );

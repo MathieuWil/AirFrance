@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Gestion des vols - Air France</title>
+	<title> Air France </title>
 	<!-- Force php to reload after the css -->
 	<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>" />
 </head>
@@ -50,7 +50,7 @@
 				<header>
 
 				<button class="header_btn header_logo">
-					<img src="images/airfrance" height="70px" />
+					<img src="images/airfrance.png" height="70px" />
 				</button>
 
 				<button class="header_btn">
