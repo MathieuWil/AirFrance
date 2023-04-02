@@ -1,6 +1,6 @@
 <h2> Ajout d'un Aeroport </h2>
 <form method="post" action="">
-	<table>
+	<table class="no_bg">
 
 		<tr> 
 			<td> Nom Aeroport : </td>
@@ -22,8 +22,7 @@
 		<tr>
 			<td> <input type="reset" name="Annuler" value="Annuler"></td>
 			<td> <input type="submit" 
-					<?= ($Aeroport!=null) ? ' name ="Modifier" value="Modifier" ' :
-																	' name="Valider" value="Valider" ' ?> />
+					<?= ($Aeroport!=null) ? ' name ="Modifier" value="Modifier" ' : ' name="Valider" value="Valider" ' ?> />
 			</td>
 		</tr>
 

@@ -81,6 +81,18 @@ header {
 
 	border: 3px solid #171717;
 	border-top: none;
+	border-radius: 0;
+}
+
+form, h2, table {
+	background-color: #0000007d;
+	width: fit-content;
+	padding: 5px 15px;
+	border-radius: 15px;
+}
+
+.no_bg {
+	background-color: transparent;
 }
 
 
@@ -92,7 +104,8 @@ header {
 */
 #home {
 	height: 100%;
-	background-image: url("http://localhost/airFrance/images/fond_acceuil.jpg");
+	background-image: url("http://localhost/Promo_266/airfrance/images/a.jpg");
+	object-fit: contain;
 	background-size: cover;
 }
 
@@ -101,18 +114,16 @@ header {
 }
 
 #home h1{
+	
 	color : #fff;
 	font-size: 2em;
 }
 
-
-
-/******************/
 /* PAGE CONNEXION */
-/******************/
 #connexion {
 	height: 100%;
-	background-image: url("http://localhost/airFrance/images/fond_connexion.jpg");
+	background-image: url("http://localhost/Promo_266/airfrance/images/c.jpg");
+	object-fit: contain;
 	background-size: cover;
 }
 
@@ -121,12 +132,29 @@ header {
 	font-size: 2em;
 }
 
-/**************/
 /* PAGE AVION */
-/**************/
 #avion {
 	height: 100%;
-	background-image: url("http://localhost/airFrance/images/fond_avion.jpg");
+	background-image: url("http://localhost/Promo_266/airfrance/images/b.jpg");
+	object-fit: contain;
 	background-size: cover;
+	color : #fff;
 }
 
+/* PAGE AEROPORT */
+#aeroport {
+	height: 100%;
+	background-image: url("http://localhost/Promo_266/airfrance/images/aeroport.jpg");
+	object-fit: contain;
+	background-size: cover;
+	color : #fff;
+}
+
+/* PAGE VOL */
+#vol {
+	height: 100%;
+	background-image: url("http://localhost/Promo_266/airfrance/images/vol.jpg");
+	object-fit: contain;
+	background-size: cover;
+	color : #fff;
+}

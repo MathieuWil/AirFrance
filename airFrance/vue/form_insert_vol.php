@@ -1,6 +1,6 @@
 <h2> Ajout d'un Vol </h2>
 <form method="post" action="">
-	<table>
+	<table class="no_bg">
 
 		<tr> 
 			<td> Ville de départ : </td>

@@ -1,6 +1,6 @@
 <h2> Ajout d'un Avion </h2>
 <form method="post" action="">
-	<table>
+	<table class="no_bg">
 
 		<tr> 
 			<td> Modèle de l'Avion : </td>
@@ -29,8 +29,7 @@
 		<tr>
 			<td> <input type="reset" name="Annuler" value="Annuler"></td>
 			<td> <input type="submit" 
-					<?= ($Avion!=null) ? ' name ="Modifier" value="Modifier" ' :
-																	' name="Valider" value="Valider" ' ?> />
+					<?= ($Avion!=null) ? ' name ="Modifier" value="Modifier" ' : ' name="Valider" value="Valider" ' ?> />
 			</td>
 		</tr>
 

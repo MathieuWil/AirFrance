@@ -10,7 +10,7 @@
 		<h3> Vous êtes : </h3>
 	</div>
 
-	<table>
+	<table class="no_bg">
 
 		<tr>
 			<td> Email :</td>
