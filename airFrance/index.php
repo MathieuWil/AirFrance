@@ -97,6 +97,36 @@
 						header("Location: index.php");
 						break;
 				}
+
+				echo '
+				<footer>
+
+				<ul>
+				<li>Support</li>
+				<li>CGU</li>
+				<li>Confidentialité</li>
+				<li>RGPD</li>
+				<li>Partenaires</li>
+				<li>Cookies</li>
+				</ul>
+
+				<hr>
+
+				<button class="header_btn">
+					<a href="https://www.youtube.com/airfrance" id="boutton"><img src ="images/youtube.png" width="50" height="50"></a>
+				</button>
+
+				<button class="header_btn">
+					<a href="https://wwws.airfrance.fr/" id="boutton"><img src ="images/monde.png" width="50" height="50"></a>
+				</button>
+
+				<button class="header_btn">
+					<a href="https://twitter.com/airfrance/" id="boutton"><img src ="images/twitter.png" width="50" height="50"></a>
+				</button>
+
+				</footer>
+				';
+
 			}
 		?>
 

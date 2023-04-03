@@ -1,7 +1,7 @@
 <?php
 	function connexion ()
 	{
-		$con = mysqli_connect("localhost", "root", "", "air_france");
+		$con = mysqli_connect("localhost:3307", "root", "", "air_france");
 		if($con == null)
 		{
 			echo "Erreur de connexion à la BDD.";
